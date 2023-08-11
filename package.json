@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node app",
-    "dev":"node app"
+    "dev": "nodemon app"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type":"module",
+  "type": "module",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
@@ -19,5 +19,8 @@
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.2",
     "nodemailer": "^6.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
