@@ -1,0 +1,12 @@
+node_modules/
+
+*.DS_Store
+# Build and Output Directories
+build/
+dist/
+out/
+target/
+bin/
+obj/
+
+env/

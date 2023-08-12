@@ -9,6 +9,8 @@ router.use('/loggeduser',checkUserAuth)
 //Public Routes
 router.post('/register',UserController.userRegistration);
 router.post('/login',UserController.UserLogin);
+router.post('/send-reset-password-email', UserController.sendUserPasswordResetEmail)
+router.post('/reset-password/:id/:token', UserController.userPasswordReset)
 
 //protect Routes
 router.post('/changepassword',UserController.UserchangePassword)
