@@ -5,6 +5,7 @@ import transporter from "../config/transportemail.mjs";
 class UserController {
     static userRegistration = async (req, res) => {
         const {name,email,password,password_confirmation,tc} = req.body;
+       
             const user = await UserModel.findOne({ email: email });
             if (user) {
                 res.json({'status': 'failed', 'message': 'Email already exists' });
